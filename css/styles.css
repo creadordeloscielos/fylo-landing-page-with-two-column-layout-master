@@ -84,6 +84,7 @@ nav ul li a{
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 3px;
+    outline: none;
 }
 
 .banner .txt button[type="submit"]{
@@ -154,7 +155,6 @@ nav ul li a{
     font-size: .85em;
     line-height: 1.8;
     color: hsl(238, 22%, 44%);
-    font-weight: 600;
 }
 
 .testimonio .txt img{
@@ -284,6 +284,14 @@ footer ul li {
     padding: 8px 0px;
 }
 
+footer  i{
+    font-size: 1em;
+    border: #fff 1px solid;
+    padding: 10px 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 @media screen and (max-width:1024px){
     .wrapper {
         width: 90%;
@@ -335,7 +343,7 @@ footer ul li {
 
     nav ul li a {
         font-size: 1em;
-        padding-left: 20px;
+        padding-left: 15px;
     }
 
     .banner{
@@ -369,20 +377,24 @@ footer ul li {
      .banner .txt input[type="email"]{
         width: 100%;
         margin-bottom: 10px;
+        font-size: .9em;
     }
 
      .banner .txt button[type="submit"]{
         width: 100%;
         margin-left: 0px;
         margin-top: 15px;
+        font-size: .9em;
     }
 
     .productive .container {
         flex-direction: column-reverse;
+
     }
 
     .productive img {
         width: 100%;
+        padding-top: 30px;
         margin: 40px auto;
     }
 
@@ -400,6 +412,7 @@ footer ul li {
 
     .productive .txt .arrow img {
         margin: 0px auto;
+        padding-top: 0px;
     }
 
     .productive .testimonio {
@@ -408,6 +421,7 @@ footer ul li {
 
     .productive .testimonio img{
         margin:0px;
+        padding-top: 0px;
     }
 
     .Get .container {
@@ -427,6 +441,11 @@ footer ul li {
     .Get .boletin {
         width: 100%;
     }
+
+    .Get .boletin input[type="email"]{
+     
+        font-size: .9em;
+    }
     
     .Get .boletin button[type="submit"]{
         width: 100%;
@@ -440,34 +459,42 @@ footer ul li {
 
     footer .container .column{
         margin-top: 15px;
+        width: 100%;
     }
 
     footer img {
         width: 100px;
     }
-    
-  
+
+    footer .redes {
+        justify-content: center;
+    }
+
 }
 
 
 @media screen and (max-width:550px){
 
     .productive .testimonio {
-       width: 90%;
+       width: 100%;
     }
 
     header .container img {
-        width: 90px;
+        width: 80px;
     }
 
-    nav ul li a {
-        font-size: .9em;
-        padding-left: 10px;
-    }
-
-  
 
 }
+
+@media screen and (max-width:450px){
+
+    .productive .txt h2{
+        font-size: 1.1em;
+    }
+
+
+}
+
 
 
 
